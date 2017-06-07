@@ -9,6 +9,7 @@
 + [Days left to next New Year](#days-left-to-next-new-year)
 + [Find Saturdays](#find-saturdays)
 2. [Functions](#functions)
++ [Polymorphic function](#polymorphic-function)
 
 ---
 
@@ -34,7 +35,6 @@ convertCToF(56) // 122 F
 ### Days left to next New Year
 
 Write a JavaScript program that returne calculated number of days left to next New Year.
-
 
 ```javascript
 function calculateDaysToNY() {
@@ -62,3 +62,22 @@ calculateSaturdays(2001, 2020)
 
 ### Functions
 
+### Polymorphic function
+
+Write a JavaScript program that reciev date in several variants in returns value in ``` yyyy-mm-dd``` format
+
+Available arguments: 
+
++ ```1496851371222 // number```
++ ```'12 January 2017' // string```
++ ```['12 January 2017']// array```
++ ```new Date() // Date object```
+
+
+```javascript
+function reformatDate(date) {
+  // code ...
+}
+
+reformatDate(1496851371222) // 2017-06-07
+```
